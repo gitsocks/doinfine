@@ -31,8 +31,9 @@ export const notifyUserOfNewFine = async (fine: Post) => {
 
   const canSend = await canSendEmail(issuedTo?.id, NOTIFICATIONS.NOTIFY_USER_OF_NEW_FINE);
 
-  if (canSend) {
+  if (canSend && scope) {
     const email = sendEmail({
+      scopeId: scope.id,
       recipients: [issuedTo?.email],
       subject: subject,
       template: UserFineTemplate({

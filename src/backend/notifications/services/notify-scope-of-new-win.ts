@@ -31,8 +31,9 @@ export const notifyScopeOfNewWin = async (win: Post) => {
 
     const subject = `🎉 ${issuedToName} has been awared a win!`;
 
-    if (recipients) {
+    if (recipients && scope) {
         sendEmail({
+            scopeId: scope.id,
             recipients: recipients.filter(recipient => recipient !== null),
             subject: subject,
             template: ScopeWinTemplate({

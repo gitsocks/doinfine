@@ -23,8 +23,9 @@ export const notifyUserOfNewWin = async (win: Post) => {
 
   console.log(issuedTo?.user.id, NOTIFICATIONS.NOTIFY_USER_OF_NEW_WIN, canSend);
 
-  if (canSend) {
+  if (canSend && scope) {
     sendEmail({
+      scopeId: scope.id,
       recipients: [issuedTo?.user.email],
       subject: "🎉 Horray! You got a win!",
       template: UserWinTemplate({ description: win.description, link: link })
