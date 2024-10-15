@@ -2,7 +2,6 @@ import { Flex, VStack } from '@chakra-ui/react';
 import { PageProps } from '@/app/page-props';
 import { LoginForm } from '@/lib/forms/LoginForm/LoginForm';
 import { AuthHeader } from '@/app/(auth)/components/AuthHeader';
-import { AuthFooter } from '@/app/(auth)/components/AuthFooter';
 import { LoginPageHeader } from '@/app/(auth)/components/LoginPageHeader';
 
 const RETURN_TO_PARAM = 'returnTo';
@@ -23,7 +22,6 @@ const LogInPage = ({ searchParams = {} }: PageProps) => {
           <LoginForm redirectTo={returnTo} />
         </VStack>
       </Flex>
-      <AuthFooter />
     </>
   );
 };

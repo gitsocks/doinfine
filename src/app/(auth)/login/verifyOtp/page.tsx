@@ -1,7 +1,6 @@
 import { Flex, VStack } from '@chakra-ui/react';
 import { PageProps } from '@/app/page-props';
 import { AuthHeader } from '@/app/(auth)/components/AuthHeader';
-import { AuthFooter } from '@/app/(auth)/components/AuthFooter';
 import { VerifyOtpPageHeader } from './components/VerifyOtpPageHeader';
 import { VerifyOtpForm } from './components/VerifyOtpForm';
 
@@ -29,7 +28,6 @@ const VerifyOtpPage = ({ searchParams = {} }: PageProps) => {
                     <VerifyOtpForm email={String(email)} redirectTo={returnTo} />
                 </VStack>
             </Flex>
-            <AuthFooter />
         </>
     );
 };

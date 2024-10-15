@@ -2,37 +2,52 @@
 
 ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=doinfine)
 
-## Getting Started
+## Overview
 
-First, run the development server:
+![Doinfine Hero Image](./public/assets/marketing/doinfine-homepage.png)
 
-```bash
-yarn
-```
+Doinfine is a passion project that was built by a team to help teams create a team charter and celebrate wins within the team. 
+Doinfine also includes a "fine" feature. 
 
-```bash
-yarn start
-```
+## Doinfine's Lifetime
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2022 - Launch
 
-## Patterns
+Doinfine launched for the first time in 2022 and onboarded its first team. A couple months later, it had 3 teams using it.
 
-### State Machines
+#### Team
 
-**DoinFine** uses finite state machines to handle business logic.
+- Herco Bezuidenhout | Software Engineer
 
-> A finite state machine is a mathematical model of computation that describes the behavior of a system that can be in only one state at any given time.
+### 2023 - Entelect Tech Accelerator
 
-The state machines in **DoinFine** are implemented using [`XState`](https://xstate.js.org/docs/).
+![Doinfine Hero Image](./public/assets/marketing/techacc.webp)
 
-You can read more about **DoinFine** state machine implementation [here](./src/machines/state-machines.md).
+Doinfine enrolled and won [Entelect's Tech Accelerator](https://businesstech.co.za/news/industry-news/734487/entelect-tech-accelerator-enters-10th-year-with-its-largest-number-of-entrants-yet/) in 2023 thanks to the hard work of the team. While not all of the team members embarked on the next journey of monitizing Doinfine, winning Tech Accelerator would not have been possible without their help
 
-## Learn More
+#### Team
 
-To learn more about Next.js, take a look at the following resources:
+- Ben Kotze | Software Engineer
+- Keane Burgers | Software Engineer
+- Emile Fourie | UX Engineer
+- Jarred Fourie | UX Engineer
+- Herco Bezuidenhout | Software Engineer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2024 - Becoming Market Fit
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+After winning Tech Accelerator, the next mission was to become market fit. While not all of the Tech Accelerator team members could join on this journey, some did. Doinfine has gone through some
+iterations of improving, perfecting and ultimately trying to figure out what people want and will pay for.
+
+#### Team
+
+- Ben Kotze | Software Engineer
+- Jarred Fourie | UX Engineer
+- Herco Bezuidenhout | Software Engineer
+
+### 2025 and onward - Sunset
+
+A lot of effort has been put in to trying to get Doinfine market fit, however, it is not successful. There are many learnings that the team can take and apply, but the team has become occuppied with other projects and priorities. 
+
+While Doinfine still has a couple of teams using it, the main reason for sunsetting it is to shift focus to other projects. Doinfine will still be available for the existing teams and will allow new sign ups, however, there will not be any more development on it. 
+
+A small support system is available for bug reports.

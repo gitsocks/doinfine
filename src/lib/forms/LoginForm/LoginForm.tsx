@@ -1,13 +1,7 @@
 'use client';
 
-import {
-  FeatureFlagNames,
-  useFeatureFlag,
-} from '@/contexts/FeatureFlagProvider';
-import { Box, Divider, VStack } from '@chakra-ui/layout';
-import { Flex, HStack, Link, Text } from '@chakra-ui/react';
-import { SignInWithMicrosoftButton } from '@/lib/buttons/SignInWithMicrosoftButton/SignInWithMicrosoftButton';
-import { EmailPasswordLogin } from './EmailPasswordLogin';
+import { VStack } from '@chakra-ui/layout';
+import { Flex, Link, Text } from '@chakra-ui/react';
 import { OtpLogin } from './OtpLogin';
 
 interface LoginFormProps {
@@ -17,35 +11,12 @@ interface LoginFormProps {
 }
 
 export const LoginForm = ({ redirectTo = '/', signup, width }: LoginFormProps) => {
-  const enablePasswordLogin = useFeatureFlag<boolean>(
-    FeatureFlagNames.enablePasswordLogin
-  );
-
   return (
     <>
       <VStack spacing={3} alignItems="stretch" gap={8}>
         <VStack alignItems="stretch" gap={5}>
-          {enablePasswordLogin ? (
-            <EmailPasswordLogin />
-          ) : (
-            <OtpLogin width={width} redirectTo={redirectTo} />
-          )}
+          <OtpLogin width={width} redirectTo={redirectTo} />
         </VStack>
-
-        <Flex margin="auto" alignItems="center" gap={2}>
-          <Box w={20}>
-            <Divider />
-          </Box>
-          <Text>OR</Text>
-          <Box w={20}>
-            <Divider />
-          </Box>
-        </Flex>
-
-        <HStack>
-          <SignInWithMicrosoftButton redirectTo={redirectTo} />
-          {/* <SignInWithGoogleButton redirectTo={redirectTo} /> */}
-        </HStack>
       </VStack>
       <Flex justifyContent="space-around">
         {signup

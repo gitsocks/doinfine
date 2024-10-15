@@ -1,7 +1,6 @@
 import { Flex, VStack } from '@chakra-ui/react';
 import { PageProps } from '@/app/page-props';
 import { AuthHeader } from '@/app/(auth)/components/AuthHeader';
-import { AuthFooter } from '@/app/(auth)/components/AuthFooter';
 import { LoginPageHeader } from '@/app/(auth)/components/LoginPageHeader';
 import { LoginForm } from '@/lib/forms/LoginForm/LoginForm';
 
@@ -23,7 +22,6 @@ const SignupPage = ({ searchParams = {} }: PageProps) => {
           <LoginForm signup={true} redirectTo={returnTo} />
         </VStack>
       </Flex>
-      <AuthFooter />
     </>
   );
 };

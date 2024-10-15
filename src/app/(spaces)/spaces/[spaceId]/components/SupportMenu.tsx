@@ -10,7 +10,6 @@ import {
 import {
   FaEnvelope,
   FaLinkedin,
-  FaLock,
   FaXTwitter,
   FaYoutube,
 } from 'react-icons/fa6';
@@ -57,9 +56,6 @@ export const SupportMenu = () => {
           LinkedIn
         </MenuItem>
         <MenuDivider />
-        <MenuItem as={Link} href="/privacy" icon={<FaLock />}>
-          Privacy Policy
-        </MenuItem>
       </MenuList>
     </Menu>
   );
